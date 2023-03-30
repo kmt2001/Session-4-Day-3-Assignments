@@ -1,3 +1,4 @@
+import AssignmentFour.OperationPerformer
 import AssignmentOne.CapitalizeAlphabetA
 import AssignmentThree.KthElementFromEnd
 import AssignmentTwo.SquareRootCalculator
@@ -29,5 +30,24 @@ object Driver extends App
     println(outputList) // Prints: List(My, nAme, is, MichAel, Scott)
   }
 
-}
+    // Driver code for
+
+    val numbers = List(Some(10.0), Some(5.0), Some(2.0))
+
+    // Test addition
+    private val resultAdd = new OperationPerformer().performArithmeticOperation(numbers, "addition")
+    println(s"Addition result: $resultAdd") // Success(17.0)
+
+    // Test subtraction
+    private val resultSub = new OperationPerformer().performArithmeticOperation(numbers, "subtraction")
+    println(s"Subtraction result: $resultSub") // Success(3.0)
+
+    // Test multiplication
+    private val resultMul = new OperationPerformer().performArithmeticOperation(numbers, "multiplication")
+    println(s"Multiplication result: $resultMul") // Success(100.0)
+
+    // Test division
+    private val resultDiv = new OperationPerformer().performArithmeticOperation(numbers, "division")
+    println(s"Division result: $resultDiv") // Success(1.0)
+  }
 
