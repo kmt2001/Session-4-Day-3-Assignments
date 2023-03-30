@@ -74,7 +74,15 @@ first element of the resulting list. It returns an Option that contains the kth 
 or None if an exception occurs during the calculation. The code catches any exception and returns None.
 
 
+## Assignment-4
 
+This code defines a class called OperationPerformer that contains a method called performArithmeticOperation. The method takes in a list of optional numbers and an operation to perform, and returns a Try object containing the result of the operation or a Failure object if any errors occur.
+
+The method first filters out any None values from the list and extracts the values of the remaining Some values. If there are no valid numbers, it returns a Failure object with an appropriate error message. Otherwise, it performs the specified operation on the valid numbers and returns a Success object containing the result.
+
+The supported operations are "addition", "subtraction", "multiplication", and "division". For division, the method ensures that there is at least one valid number besides the numerator and returns a Failure object with an appropriate error message if there isn't. It then performs the division operation on the valid numbers and returns a Success object containing the result.
+
+If an unsupported operation is requested, the method returns a Failure object with an appropriate error message.
     
     
     
