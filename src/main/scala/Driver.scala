@@ -30,7 +30,7 @@ object Driver extends App
     println(outputList) // Prints: List(My, nAme, is, MichAel, Scott)
   }
 
-    // Driver code for
+    // Driver code for Arithmetic Operations
 
     val numbers = List(Some(10.0), Some(5.0), Some(2.0))
 
